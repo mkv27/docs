@@ -1,9 +1,9 @@
 ---
-title: Introduction
-description: "The 25th of October 2016, the team behind zeit.co, announced Next.js, a framework for server-rendered React applications. Few hours after the announcement, the idea of creating server-rendered Vue.js applications the same way as Next.js was obvious: Nuxt.js was born."
+title: Introducción
+description: "El 25 de Octubre de 2016, el equipo detrás de zeit.co, anunció Next.js, un framework para aplicaciónes server-rendered con React. Pocas horas después del anuncio, la idea de crear aplicaciónes server-rendered con Vue.js de la misma forma que Next.js era obvia: Nuxt.js nació."
 ---
 
-> The 25th of October 2016, the team behind [zeit.co](https://zeit.co/), announced [Next.js](https://zeit.co/blog/next), a framework for server-rendered React applications. Few hours after the announcement, the idea of creating server-rendered [Vue.js](https://vuejs.org) applications the same way as Next.js was obvious: **Nuxt.js** was born.
+> El 25 de Octubre de 2016, el equipo detrás de [zeit.co](https://zeit.co/), anunció [Next.js](https://zeit.co/blog/next),un framework para aplicaciónes server-rendered con React. Pocas horas después del anuncio, la idea de crear aplicaciónes server-rendered con [Vue.js](https://vuejs.org) de la misma forma que Next.js era obvia: **Nuxt.js** nació.
 
 ## What is Nuxt.js ?
 
