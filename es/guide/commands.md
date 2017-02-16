@@ -1,6 +1,6 @@
 ---
-title: Comandos
-description: Nuxt.js viene con un conjunto de comandos útiles con propósito en desarrollo y producción.
+título: Comandos
+descripción: Nuxt.js viene con un conjunto de comandos útiles con propósito en desarrollo y producción.
 ---
 
 > Nuxt.js viene con un conjunto de comandos útiles con propósito en desarrollo y producción.
