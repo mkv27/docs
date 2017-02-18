@@ -1,21 +1,21 @@
 ---
 title: Data Asincrónica
-description: Nuxt.js sobrecarga el método de datos desde vue.js para dejarte manejar la operación asincrónica antes de configurar los datos del componente.
+description: Nuxt.js sobrecarga el método "data" desde vue.js para permitirte un manejo de operación asíncrona antes de configurar los datos del componente.
 ---
 
-> Nuxt.js *sobrecarga* el método de `datos` desde vue.js para dejarte manejar la operación asincrónica antes de configurar los datos del componente.
+> Nuxt.js *sobrecarga* el método `data` desde vue.js para permitirte un manejo de operación asíncrona antes de configurar los datos del componente.
 
-## El Método de Datos
+## El Método data
 
 `data` es llamada cada vez antes de cargar el componente (**solo para componentes de páginas**). Puede ser llamada desde el lado del servidor o antes de navegar por la ruta correspondiente. Este método recibe [el contexto](/api#context) como primer argumento, puedes usarlo para obtener algunos datos y devolver los datos del componente.
 
-<div class="Alert Alert--orange">Tú **NO** tienes acceso a la bandeja de instancia del componente `this` dentro de `data` porque es llamado **antes de iniciar** el componente.</div>
+<div class="Alert Alert--orange">Tú **NO** tienes acceso a la instancia del componente a traves de `this` dentro de `data` porque es llamado **antes de iniciar** el componente.</div>
 
-Para hacer el método de datos asincrónica, nuxt.js te ofrece diferentes opciones, escoge la que se te haga más familiar:
+Para hacer el método "data" asíncrono, nuxt.js te ofrece diferentes opciones, elige la que se te haga más familiar:
 
 1. Devolviendo un `Promise`, nuxt.js esperará que la promesa sea resuelta antes de renderizar el componente.
-2. Usando la [asincrónica/esperar respuesta](https://github.com/lukehoban/ecmascript-asyncawait) ([aprende más de esto](https://zeit.co/blog/async-and-await))
-3. Define un llamado de vuelta como segundo argumento. Tiene que ser nombrado de esta manera: `callback(err, data)`
+2. Usando la [propuesta async/await](https://github.com/lukehoban/ecmascript-asyncawait) ([aprende más de esto](https://zeit.co/blog/async-and-await))
+3. Define un "callback" como segundo argumento. Tiene que ser llamado de esta manera: `callback(err, data)`
 
 ### Devolviendo una Promesa
 ```js
@@ -29,7 +29,7 @@ export default {
 }
 ```
 
-### Usando asincrónica/esperar
+### Usando async/await
 ```js
 export default {
   async data ({ params }) {
@@ -39,7 +39,7 @@ export default {
 }
 ```
 
-### Usando una llamada de vuelta
+### Usando un "callback"
 ```js
 export default {
   data ({ params }, callback) {
@@ -53,7 +53,7 @@ export default {
 
 ### Devolviendo un Objeto
 
-Si no necesitas hacer ningún llamado asincrónico, puedes simplemente devolver un objeto:
+Si no necesitas hacer ningún llamado asíncrono, puedes simplemente devolver un objeto:
 
 ```js
 export default {
@@ -63,9 +63,9 @@ export default {
 }
 ```
 
-### Mostrando los datos
+### Mostrando la "data"
 
-Cuando el método de datos está establecido, puedes mostrar los datos dentro de tu plantilla como solías hacerlo:
+Cuando el método "data" está establecido, puedes mostrar los datos dentro de tu plantilla como solías hacerlo:
 
 ```html
 <template>
@@ -75,11 +75,11 @@ Cuando el método de datos está establecido, puedes mostrar los datos dentro de
 
 ## El Contexto
 
-Para ver la lista de teclas disponibles en `context`, revisa los [datos de Páginas API](/api).
+Para ver la lista de claves disponibles en `context`, revisa la [API de data de Páginas](/api).
 
 ## Manejo de Errores
 
-Nuxt.js agrega el método `error(params)` en el `context`, puedes llamarlo para mostrar la página de error. `params.statusCode` será también usada para renderizar el código de estado apropiado desde el lado del servidor.
+Nuxt.js agrega el método `error(parámetros)` en el `context`, puedes llamarlo para mostrar la página de error. `params.statusCode` será también usada para renderizar el código de estado apropiado desde el lado del servidor.
 
 Ejemplo con un `Promise`:
 ```js
@@ -90,13 +90,13 @@ export default {
       return { title: res.data.title }
     })
     .catch((e) => {
-      error({ statusCode: 404, message: 'Post not found' })
+      error({ statusCode: 404, message: 'Post no encontrado' })
     })
   }
 }
 ```
 
-Si estás usando el argumento de `llamado de vuelta`, puedes llamarlo directamente con el error, nuxt.js llamará el método de `error` por ti:
+Si estás usando el argumento `callback`, puedes llamarlo directamente con el error, nuxt.js llamará el método `error` por ti:
 ```js
 export default {
   data ({ params }, callback) {
@@ -111,4 +111,4 @@ export default {
 }
 ```
 
-Para modificar la página de error, visita la [sección de layouts](/guide/views#layouts).
+Para modificar la página de error, visita la [sección de layouts en VISTAS](/guide/views#layouts).
