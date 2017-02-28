@@ -1,6 +1,6 @@
 ---
-título: Configuración
-descripción: La configuración por defecto de Nuxt.js cubre la mayoría de usos. Sin embargo, el archivo nuxt.config.js te deja sobreescribirlo.
+title: Configuración
+description: La configuración por defecto de Nuxt.js cubre la mayoría de usos. Sin embargo, el archivo nuxt.config.js te deja sobreescribirlo.
 ---
 
 > La configuración por defecto de Nuxt.js cubre la mayoría de usos. Sin embargo, el archivo nuxt.config.js te deja sobreescribirlo.
@@ -13,13 +13,13 @@ Esta opción te permite añadir módulos dentro del archivo vendor.bundle.js gen
 
 ### cache
 
-Esta opción habilita los componentes en cache para mejorar el rendimiento de renderizado.
+Esta opción habilita los componentes en caché para mejorar el rendimiento de renderizado.
 
 [Documentación acerca de la integración de cache](/api/configuration-cache)
 
 ### css
 
-Esta opción te permite definir los archivos/módulos/librerías de CSS que quieras establecer como globales (incluido en cada página).
+Esta opción te permite definir los archivos/módulos/librerías CSS que quieras establecer como globales (incluido en cada página).
 
 [Documentación acerca de la integración de css](/api/configuration-css)
 
@@ -37,25 +37,25 @@ Esta opción te permite definir las variables de entorno disponibles para el cli
 
 ### generate
 
-Esta opción te permite definir cada valor disponible para cada ruta dinámica en tu aplicación que Nuxt.js transforma en archivos HTML.
+Esta opción te permite definir cada valor de parámetros disponible para cada ruta dinámica en tu aplicación que Nuxt.js transforma en archivos HTML.
 
 [Documentación acerca de la integración de generate](/api/configuration-generate)
 
 ### head
 
-Esta opción te permite definir todas las 'metas' por defecto para tu aplicación.
+Esta opción te permite definir todas las etiquetas "meta" por defecto para tu aplicación.
 
 [Documentación acerca de la integración de head](/api/configuration-head)
 
 ### loading
 
-Esta opción te permite modificar la carga del componente de carga por defecto con Nuxt.js.
+Esta opción te permite personalizar la carga del componente de carga predeterminado con Nuxt.js.
 
 [Documentación acerca de la integración de loading](/api/configuration-loading)
 
 ### plugins
 
-Esta opción te permite definir los plugins de Javascript para ser corridos antes de instanciar la aplicación vue.js de origen.
+Esta opción te permite definir los plugins en Javascript para ser ejecutados antes de instanciar la aplicación vue.js de origen.
 
 [Documentación acerca de la integración de plugins](/api/configuration-plugins)
 
