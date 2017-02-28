@@ -1,16 +1,16 @@
 ---
 título: Comandos
-descripción: Nuxt.js viene con un conjunto de comandos útiles con propósito en desarrollo y producción.
+descripción: Nuxt.js viene con un conjunto de comandos útiles, ambos con fines en desarrollo y producción.
 ---
 
-> Nuxt.js viene con un conjunto de comandos útiles con propósito en desarrollo y producción.
+> Nuxt.js viene con un conjunto de comandos útiles, ambos con fines en desarrollo y producción.
 
 ## Lista de Comandos
 
 | Comando | Descripción |
 |---------|-------------|
-| nuxt | Lanza un servidor de desarrollo [localhost:3000](http://localhost:3000) con 'hot-reloading'. |
-| nuxt build | Construye tu aplicación con webpack y minifica JS & CSS (para producción). |
+| nuxt | Lanza un servidor de desarrollo [localhost:3000](http://localhost:3000) con "hot-reloading". |
+| nuxt build | Construye tu aplicación con webpack y minifica los JS & CSS (para producción). |
 | nuxt start | Empieza el servidor en modo producción (Después de correr `nuxt build`). |
 | nuxt generate | Construye la aplicación y genera cada ruta como un archivo HTML (usado para hosting estático). |
 
@@ -29,7 +29,7 @@ Luego, puedes lanzar tus comandos vía `npm run <command>` (ejemplo: `npm run de
 
 ## Entorno de Desarrollo
 
-Para lanzar Nuxt en modo de desarrollo con el 'hot reloading':
+Para lanzar Nuxt en modo de desarrollo con "hot reloading":
 
 ```bash
 nuxt
@@ -37,11 +37,11 @@ nuxt
 npm run dev
 ```
 
-## Implementación de Producción
+## Implementación en Producción
 
-Nuxt.js te deja elegir entre 2 modos para desplegar tu aplicación: 'Server Rendered' o 'Static Generated'.
+Nuxt.js te deja elegir entre 2 modos para desplegar tu aplicación: "Server Rendered" o "Static Generated".
 
-### Implementación del servidor renderizado
+### Implementación del modo "Server Rendered"
 
 Para desplegar, en lugar de correr nuxt, quizás quieras construir con anticipación. Por lo tanto, construir e iniciar son comandos separados:
 
@@ -50,7 +50,7 @@ nuxt build
 nuxt start
 ```
 
-El `package.json` se recomienda como a continuación:
+Este archivo `package.json` es el recomendado:
 ```json
 {
   "name": "my-app",
@@ -67,7 +67,7 @@ El `package.json` se recomienda como a continuación:
 
 Nota: recomendamos poner `.nuxt` en `.npmignore` o `.gitignore`.
 
-### Implementación de Estática Generada
+### Implementación del modo "Static Generated"
 
 Nuxt.js te da la posibilidad de alojar tu aplicación web en cualquier hosting estático.
 
@@ -77,8 +77,8 @@ Para generar nuestra aplicación web en archivos estáticos:
 npm run generate
 ```
 
-Eso creará una carpeta `dist` con todo incluido listo para ser desplegado en un hosting estático.
+Eso creará una carpeta `dist` con todo lo incluido listo para ser desplegado en un hosting estático.
 
 Si tienes un proyecto con [rutas dinámicas](/guide/routing#dynamic-routes), visita [generar configuración](/api/configuration-generate) para decirle a nuxt.js cómo generar estas rutas dinámicas.
 
-<div class="Alert">Cuando estes generando tu aplicación web con `nuxt generate`, [el contexto](/api#context) dada a [data()](/guide/async-data#the-data-method) y [fetch()](/guide/vuex-store#the-fetch-method) no tendrá `req` y`res`.</div>
+<div class="Alert">Cuando estes generando tu aplicación web con `nuxt generate`, [el contexto](/api#context) dado a [data()](/guide/async-data#the-data-method) y [fetch()](/guide/vuex-store#the-fetch-method) no tendrá `req` y`res`.</div>
