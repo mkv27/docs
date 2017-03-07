@@ -86,7 +86,7 @@ router: {
 }
 ```
 
-Como puedes ver la ruta con nombre `users-id` tiene el "path" `:id?` lo cual lo hace opcional, si quieres hacerlo necesario, crea un archivo `index.vue` en el directorio `users`.
+Como puedes ver la ruta con nombre `users-id` tiene el "path" `:id?` lo cual lo hace opcional, si quieres hacerlo necesario, crea un archivo `index.vue` en el directorio `users/_id`.
 
 ### Validar los Parámetros de Ruta
 
@@ -300,7 +300,9 @@ Luego, en tu `nuxt.config.js`, "layout" o página, usa la clave `middleware`:
 `nuxt.config.js`
 ```js
 module.exports = {
-  middleware: 'stats'
+  router: {
+    middleware: 'stats'
+  }  
 }
 ```
 

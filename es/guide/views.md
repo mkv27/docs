@@ -164,3 +164,38 @@ Más información sobre el método head: [API Configuration head](/api/configura
 Más información acerca del método head: [head en el API de Páginas](/api/pages-head)
 
 <p class="Alert">Para evitar alguna duplicación cuando usas un componente hijo, por favor dame un identificador único con el la clave `hid`, por favor [lee más acerca de esto](https://github.com/declandewet/vue-meta#lists-of-tags).</p>
+
+## Document
+
+> Puedes personalizar el "document" principal con nuxt.js
+
+Para ampliar la plantilla html, crea un archivo `app.html` en la raíz de tu proyecto.
+
+La plantilla predeterminada es:
+
+```html
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>
+```
+
+Un ejemplo de agregar clases CSS condicionales para IE:
+
+```html
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en-US" class="lt-ie9 ie9" {{ HTML_ATTRS }}><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html {{ HTML_ATTRS }}><!--<![endif]-->
+  <head>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>
+```

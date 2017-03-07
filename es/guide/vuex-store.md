@@ -184,4 +184,6 @@ actions: {
 }
 ```
 
+> Si estas usando el modo _Modules_ de Vuex store, solo el módulo primario (en`store/index.js`) recibirá esta acción. Necesitarás encadenar tus acciones de módulo desde ahí.
+
 El contexto es dado a `nuxtServerInit` como el segundo argumento, es el mismo que con el método `data` o `fetch` excepto que `context.redirect()` and `context.error()` son omitidos.

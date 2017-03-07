@@ -14,11 +14,21 @@ Primero, necesitamos agregar 'ava' y 'jsdom' como dependencias de desarrollo:
 npm install --save-dev ava jsdom
 ```
 
-Y agrega un "script" "test" a `package.json`:
+Y agregamos un "script" "test" a nuestro `package.json` y configuramos ava para compilar archivos que importamos en nuestros tests:
 
 ```javascript
 "scripts": {
   "test": "ava",
+   "ava": {
+     "require": [
+       "babel-register"
+     ]
+   },
+   "babel": {
+     "presets": [
+       "es2015"
+     ]
+   }
 }
 ```
 

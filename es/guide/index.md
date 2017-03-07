@@ -49,7 +49,7 @@ Bajo el capó usamos [Webpack](https://github.com/webpack/webpack) con [vue-Load
 
 ## Esquema
 
-Aquí se muestra un esquema de cómo es lo que se llama por nuxt.js cuando un servidor es llamado o cuando un usuario navega a través de la aplicación via `<nuxt-link>`:
+Este esquema muestra lo que es llamado por nuxt.js cuando el servidor es llamado o cuando el usuario navega a través de la aplicación via `<nuxt-link>`:
 
 ![nuxt-schema](/nuxt-schema.png)
 
