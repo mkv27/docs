@@ -99,4 +99,4 @@ No queremos generar manualmente la aplicación cada vez que actualizamos los [re
 
 Ahora tenemos una **Aplicación Web Estáticamente Generada sin Servidor** (Serverless Static Generated Web Application) :)
 
-Podemos ir más lejos si pensamos en una aplicación web de e-commerce hecha con `nuxt generate` y hospedada en un CDN, y cada vez que un producto se agota o vuelve a estar disponible, regeneramos la aplicación web. Pero si el usuario navega a través de una aplicación web mientras tanto, estará actualizado gracias a las llamadas al API hechas al API del e-commerce. No se necesita tener múltiples instacias de un servidor + un cache nunca más!
+Podemos ir más lejos si pensamos en una aplicación web de e-commerce hecha con `nuxt generate` y hospedada en un CDN, y cada vez que un producto se agota o vuelve a estar disponible, regeneramos la aplicación web. Pero si el usuario navega a través de una aplicación web mientras tanto, estará actualizado gracias a las llamadas al API hechas al API del e-commerce. No se necesita tener múltiples instacias de un servidor + un caché nunca más!
