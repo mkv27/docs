@@ -12,7 +12,7 @@ description: Nuxt.js lets you define the CSS files/modules/libraries you want to
 
 If the item is an object, the properties are:
 - src: `String` (path of the file)
-- lang: `String` ([pre-processor used](/guide/pages#using-pre-processors))
+- lang: `String` ([pre-processor used](/faq/pre-processors))
 
 In `nuxt.config.js`, add the CSS resources:
 
@@ -24,7 +24,9 @@ module.exports = {
     // node.js module but we specify the pre-processor
     { src: 'bulma', lang: 'sass' },
     // Css file in the project
-    '~assets/css/main.css'
+    '~assets/css/main.css',
+    // Sass file in the project
+    { src: '~assets/css/main.scss', lang: 'scss' } // scss instead of sass
   ]
 }
 ```

@@ -131,11 +131,9 @@ Example of adding a custom route:
 
 `nuxt.config.js`
 ```js
-const resolve = require('path').resolve
-
 module.exports = {
   router: {
-    extendRoutes (routes) {
+    extendRoutes (routes, resolve) {
       routes.push({
         name: 'custom',
         path: '*',
