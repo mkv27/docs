@@ -1,9 +1,9 @@
 ---
-título: Instalación
-descripción: Es realmente fácil de empezar con Nuxt.js. Un proyecto simple solo necesita la dependencia de `nuxt`.
+title: Instalación
+description: Es realmente fácil de empezar con Nuxt.js. Un proyecto simple solo necesita la dependencia `nuxt`.
 ---
 
-> Es realmente fácil de empezar con Nuxt.js. Un proyecto simple solo necesita la dependencia de `nuxt`.
+> Es realmente fácil de empezar con Nuxt.js. Un proyecto simple solo necesita la dependencia `nuxt`.
 
 ## Usando la plantilla de inicio de Nuxt.js
 
@@ -36,7 +36,7 @@ Para descubrir más acerca de la estructura del directorio del proyecto: [Docume
 
 ## Empezando de cero
 
-Creando una aplicación con Nuxt.js desde cero es también bastante sencillo, solo necesita *1 archivo y 1 directorio*. Vamos a crear un directorio vacío para empezar a trabajar en la aplicación:
+Crear una aplicación con Nuxt.js desde cero es también bastante sencillo, solo necesita *1 archivo y 1 directorio*. Vamos a crear un directorio vacío para empezar a trabajar en la aplicación:
 
 ```bash
 $ mkdir <project-name>
