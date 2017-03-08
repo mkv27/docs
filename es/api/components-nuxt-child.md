@@ -1,13 +1,13 @@
 ---
-title: "API: The <nuxt-child> Component"
-description: Display the current page
+title: "API: El Componente <nuxt-child>"
+description: Muestra la página actual
 ---
 
-# The &lt;nuxt-child&gt; Component
+# El Componente &lt;nuxt-child&gt;
 
-> This component is used for displaying the children components in a [nested route](/guide/routing#nested-routes).
+> Este componente es usado para mostrar los componentes hijos en una [ruta anidada](/guide/routing#nested-routes).
 
-Example:
+Ejemplo:
 
 ```bash
 -| pages/
@@ -16,7 +16,7 @@ Example:
 ---| parent.vue
 ```
 
-This file tree will generate these routes:
+Este árbol de archivos generará estas rutas:
 ```js
 [
   {
@@ -34,15 +34,15 @@ This file tree will generate these routes:
 ]
 ```
 
-To display the `child.vue` component, I have to insert `<nuxt-child/>` inside `pages/parent.vue`:
+Para mostrar el componente `child.vue`, debo insertar `<nuxt-child/>` dentro de `pages/parent.vue`:
 
 ```html
 <template>
   <div>
-    <h1>I am the parent view</h1>
+    <h1>Yo soy la vista padre</h1>
     <nuxt-child/>
   </div>
 </template>
 ```
 
-To see an example, take a look at the [nested-routes example](/examples/nested-routes).
+Para ver un ejemplo, revisa el [ejemplo de rutas anidadas](/examples/nested-routes).
