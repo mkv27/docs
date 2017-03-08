@@ -1,22 +1,22 @@
 ---
-title: "API: The <nuxt> Component"
-description: Display the page components inside a layout.
+title: "API: El Componente <nuxt>"
+description: Muestra los componentes página dentro de un "layout".
 ---
 
-# The &lt;nuxt&gt; Component
+# El Componente &lt;nuxt&gt;
 
-> This component is used only in [layouts](/guide/views#layouts) to display the page components.
+> Este componente es usado solo en [layouts](/guide/views#layouts) para mostrar los componentes página.
 
-Example (`layouts/default.vue`):
+Ejemplo (`layouts/default.vue`):
 
 ```html
 <template>
   <div>
-    <div>My nav bar</div>
+    <div>Mi barra de navegación</div>
     <nuxt/>
-    <div>My footer</div>
+    <div>Mi pie de página</div>
   </div>
 </template>
 ```
 
-To see an example, take a look at the [layouts example](/examples/layouts).
+Para ver un ejemplo, revisa el [ejemplo de layouts](/examples/layouts).
